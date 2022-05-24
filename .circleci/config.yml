@@ -19,5 +19,4 @@ jobs:
      
     steps: 
       - checkout 
-      - run: chmod +x ./install.sh
-      - run: ./install.sh
+      - run: sudo su --command "chmod +x install.sh && ./install.sh"
